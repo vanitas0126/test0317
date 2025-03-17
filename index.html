@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: lightyellow; /* 처음 배경색 (노란색) */
+    }
+    .bgcolor--blue {
+      background-color: lightblue; /* 클릭하면 바뀔 배경색 (파란색) */
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn_bg" onclick="changeColor()">배경색상변경</button>
+
+  
+  <script>
+   
+   const btnBg = document.querySelector('.btn_bg');
+   btnBg.addEventListener('click', function () {  //명령문을 묶어주는 역할
+   document.body.classList.toggle('bgcolor--blue');
+
+   });
+   
+   
+ //  const btnBg = document.querySelector('.btn_bg'); 
+ //   btnBg.addEventListener('click', function () {
+//  document.body.classList.toggle('bgcolor--blue');
+//});
+//btnBg.addEventListener('click', function () {
+//  console.log('버튼이 눌렸습니다!'); // 클릭할 때마다 로그 출력
+//});
+
+  </script>
+</body>
+</html>
